@@ -1,0 +1,62 @@
+{
+  "page": 1,
+  "limit": 50,
+  "transactions": [
+    {
+      "wallet_address": "2Ejnns2Fd5gsZdFJbnkZmQEwbrgoiMc2ikKcS2z2Ps3e",
+      "amount": "114705.125733",
+      "type": "buy",
+      "protocol": "Unknown",
+      "timestamp": "2025-06-25T06:42:47.000Z"
+    },
+    {
+      "wallet_address": "2Ejnns2Fd5gsZdFJbnkZmQEwbrgoiMc2ikKcS2z2Ps3e",
+      "amount": "194282.578235",
+      "type": "buy",
+      "protocol": "Unknown",
+      "timestamp": "2025-06-20T16:17:39.000Z"
+    },
+    {
+      "wallet_address": "2Ejnns2Fd5gsZdFJbnkZmQEwbrgoiMc2ikKcS2z2Ps3e",
+      "amount": "110986.525674",
+      "type": "buy",
+      "protocol": "Unknown",
+      "timestamp": "2025-06-10T12:24:13.000Z"
+    },
+    {
+      "wallet_address": "2Ejnns2Fd5gsZdFJbnkZmQEwbrgoiMc2ikKcS2z2Ps3e",
+      "amount": "186630.423775",
+      "type": "buy",
+      "protocol": "Unknown",
+      "timestamp": "2025-06-05T19:51:10.000Z"
+    },
+    {
+      "wallet_address": "2Ejnns2Fd5gsZdFJbnkZmQEwbrgoiMc2ikKcS2z2Ps3e",
+      "amount": "259187.409042",
+      "type": "buy",
+      "protocol": "Unknown",
+      "timestamp": "2025-05-05T09:23:38.000Z"
+    },
+    {
+      "wallet_address": "8icKqfmu95pCmfQLc2cLkmhB7LqN8tRaaE4cvKnGpwpq",
+      "amount": "2500",
+      "type": "buy",
+      "protocol": "Unknown",
+      "timestamp": "2025-04-07T15:58:07.000Z"
+    },
+    {
+      "wallet_address": "2Ejnns2Fd5gsZdFJbnkZmQEwbrgoiMc2ikKcS2z2Ps3e",
+      "amount": "98599.979736",
+      "type": "buy",
+      "protocol": "Unknown",
+      "timestamp": "2025-03-26T10:46:15.000Z"
+    },
+    {
+      "wallet_address": "2Ejnns2Fd5gsZdFJbnkZmQEwbrgoiMc2ikKcS2z2Ps3e",
+      "amount": "114442.745066",
+      "type": "buy",
+      "protocol": "Unknown",
+      "timestamp": "2025-03-21T22:26:37.000Z"
+    }
+]
+}
