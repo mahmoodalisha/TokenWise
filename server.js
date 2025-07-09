@@ -228,8 +228,7 @@ function identifyProtocol(tx) {
 
   const allKeys = [...accountKeys, ...innerProgramIds];
 
-  console.log('ACCOUNT KEYS:', accountKeys);
-  console.log('INNER PROGRAM IDs:', innerProgramIds);
+  
 
   for (const [protocol, ids] of Object.entries(PROGRAM_IDS)) {
     if (allKeys.some(k => ids.includes(k))) {
@@ -322,7 +321,7 @@ async function fetchHistoricalTransactions(topWalletSet) {
 
 
               if (type && wallet) {
-                console.log(`[LOG] ${type.toUpperCase()} - ${wallet} - ${amount}`);
+                
                 await pool.query(
                   `INSERT INTO transactions (wallet_address, amount, type, protocol, timestamp)
                    VALUES ($1, $2, $3, $4, $5)
