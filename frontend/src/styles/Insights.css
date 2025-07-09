@@ -1,0 +1,82 @@
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.chart-container {
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.chart-title {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #e0e0e0;
+}
+
+.repeats-list {
+  margin-top: 1.5rem;
+}
+
+.repeats-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #333;
+}
+
+.repeats-wallet {
+  font-family: 'Roboto Mono', monospace;
+  color: #88d3ce;
+  font-size: 0.9rem;
+}
+
+.repeats-count {
+  background-color: #6e45e2;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 10px;
+  font-size: 0.8rem;
+}
+
+.insights-highlight {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.highlight-card {
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1;
+  margin: 0 0.5rem;
+}
+
+.highlight-value {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.highlight-label {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.buy-highlight .highlight-value {
+  color: #4CAF50;
+}
+
+.sell-highlight .highlight-value {
+  color: #F44336;
+}
+
+.protocol-highlight .highlight-value {
+  color: #36A2EB;
+}

@@ -1,0 +1,17 @@
+http://localhost:5000/api/top-wallets
+
+
+GET latest 100 transactions:
+http://localhost:5000/api/transactions
+
+Filter by wallet:
+http://localhost:5000/api/transactions?wallet=u6PJ8DtQuPFnfmwHbGFULQ4u4EgjDiyYKjVEsynXq2w
+
+Filter by type (buy/sell):
+http://localhost:5000/api/transactions?type=sell
+
+Filter by date:
+http://localhost:5000/api/transactions?from=2024-08-01&to=2024-08-05
+
+Limit number of results:
+http://localhost:5000/api/transactions?limit=20

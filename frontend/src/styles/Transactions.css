@@ -1,0 +1,94 @@
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transactions-table th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  font-weight: 500;
+  position: sticky;
+  top: 0;
+}
+
+.transactions-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #333;
+}
+
+.transactions-table tr:hover {
+  background-color: #2a2a2a;
+}
+
+.tx-wallet {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.9rem;
+  color: #88d3ce;
+}
+
+.tx-amount {
+  font-weight: 500;
+}
+
+.tx-buy {
+  color: #4CAF50;
+  font-weight: 500;
+}
+
+.tx-sell {
+  color: #F44336;
+  font-weight: 500;
+}
+
+.tx-time {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.tx-protocol {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  background-color: #333;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.table-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.search-input {
+  background-color: #2a2a2a;
+  border: 1px solid #333;
+  color: #e0e0e0;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  width: 250px;
+}
+
+.pagination {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.pagination button {
+  background-color: #2a2a2a;
+  border: 1px solid #333;
+  color: #e0e0e0;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #6e45e2;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
