@@ -4,6 +4,7 @@ import { FiExternalLink } from "react-icons/fi";
 import '../styles/Transactions.css';
 
 const Transactions = () => {
+  const apiBase = process.env.REACT_APP_SERVER_URL;
   const [transactions, setTransactions] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
@@ -12,7 +13,7 @@ const Transactions = () => {
   useEffect(() => {
     const fetchTransactions = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/transactions");
+        const res = await axios.get(`${apiBase}/api/transactions`);
         setTransactions(res.data.transactions);
       } catch (err) {
         console.error("Error fetching transactions", err);

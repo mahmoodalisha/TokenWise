@@ -15,6 +15,7 @@ import '../styles/Insights.css';
 ChartJS.register(ArcElement, BarElement, CategoryScale, LinearScale, Tooltip, Legend);
 
 const Insights = () => {
+  const apiBase = process.env.REACT_APP_SERVER_URL;
   const [buys, setBuys] = useState(0);
   const [sells, setSells] = useState(0);
   const [protocolCounts, setProtocolCounts] = useState({});
@@ -23,7 +24,7 @@ const Insights = () => {
   useEffect(() => {
     const fetchAndProcess = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/transactions");
+        const res = await axios.get(`${apiBase}/api/transactions`);
         const txs = res.data.transactions;
 
         let buyCount = 0;

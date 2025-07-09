@@ -6,13 +6,14 @@ import "../styles/TopWallets.css";
 import "../styles/Dashboard.css";
 
 const TopWallets = () => {
+  const apiBase = process.env.REACT_APP_SERVER_URL;
   const [wallets, setWallets] = useState([]);
   const [sortConfig, setSortConfig] = useState({ key: "percentageShare", direction: "desc" });
 
   useEffect(() => {
     const fetchTopWallets = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/top-wallets");
+        const res = await axios.get(`${apiBase}/api/top-wallets`);
         setWallets(res.data.topWallets);
       } catch (err) {
         console.error("Error fetching top wallets", err);
