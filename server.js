@@ -175,8 +175,6 @@ async function loadTopWallets() {
 
 (async () => {
   await loadTopWallets();
-  console.log('[LOADED] Top wallet set size:', topWalletSet.size);
-  console.log('Loaded topWalletSet:', [...topWalletSet]);
   await fetchHistoricalTransactions(topWalletSet);
 })();
 
@@ -235,7 +233,6 @@ function identifyProtocol(tx) {
 
   for (const [protocol, ids] of Object.entries(PROGRAM_IDS)) {
     if (allKeys.some(k => ids.includes(k))) {
-      console.log(` MATCHED PROTOCOL: ${protocol}`);
       return protocol;
     }
   }
@@ -263,7 +260,7 @@ async function fetchHistoricalTransactions(topWalletSet) {
       
       const signatures = await connection.getSignaturesForAddress(tokenAccountPubkey, { limit: 100 });
 
-      console.log(`[INFO] Fetched ${signatures.length} transactions for ${walletAddress}`);
+      
 
       for (let i = 0; i < signatures.length; i += TX_BATCH_SIZE) {
         const batch = signatures.slice(i, i + TX_BATCH_SIZE);
@@ -280,8 +277,7 @@ async function fetchHistoricalTransactions(topWalletSet) {
 
           const tx = result.value;
           const protocol = identifyProtocol(tx);
-          console.log('TX:', tx.transaction.message.accountKeys.map(k => k.pubkey?.toBase58?.() || k.toBase58?.()));
-          console.log('IDENTIFIED PROTOCOL:', protocol);
+          
 
           const instructions = [
   ...(tx?.transaction?.message?.instructions || []),
@@ -414,7 +410,7 @@ for (const ix of instructions) {
                ON CONFLICT DO NOTHING`,
               [wallet, amount, type, protocol, timestamp]
             );
-            console.log(` Tx stored: ${wallet} did a ${type} of ${amount}`);
+            
           }
         }
       }
