@@ -236,7 +236,7 @@ function identifyProtocol(tx) {
     }
   }
 
-  console.log(' No protocol matched for TX');
+  
   return 'Unknown';
 }
 
