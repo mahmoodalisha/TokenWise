@@ -7,6 +7,8 @@ TokenWise is a real-time analytics tool that tracks the top 60 holders of a spec
 
 <img width="1920" height="1080" alt="Screenshot 2025-07-09 002425" src="https://github.com/user-attachments/assets/0e4ae563-cc31-46ed-ab60-3daeaecfb325" />
 
+<img width="1905" height="1027" alt="Screenshot 2025-07-09 162808" src="https://github.com/user-attachments/assets/f8259a1a-3ac3-4982-9fbb-4d058e736ffc" />
+
 
 > 🔍 **Target Token:**  
 > `9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump`
