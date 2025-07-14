@@ -2,6 +2,12 @@
 
 TokenWise is a real-time analytics tool that tracks the top 60 holders of a specific token on the **Solana blockchain**, analyzes their **buy/sell activity**, identifies the **protocol used** (Jupiter, Raydium, Orca), and visualizes these insights on an intuitive dashboard.
 
+<img width="1920" height="1080" alt="Screenshot 2025-07-07 153623" src="https://github.com/user-attachments/assets/ec876f89-602a-4ab5-9759-9a80d2c6debd" />
+
+
+<img width="1920" height="1080" alt="Screenshot 2025-07-09 002425" src="https://github.com/user-attachments/assets/0e4ae563-cc31-46ed-ab60-3daeaecfb325" />
+
+
 > 🔍 **Target Token:**  
 > `9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump`
 
